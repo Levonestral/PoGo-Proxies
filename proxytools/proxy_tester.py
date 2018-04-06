@@ -154,7 +154,6 @@ def start_request_niantic(session, proxy, timeout):
     # Send request to nianticlabs.com.
     future_niantic = session.get(
         proxy_test_url,
-        '',
         proxies={'http': proxy, 'https': proxy},
         timeout=timeout,
         headers={'Host': 'sso.pokemon.com',
